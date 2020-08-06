@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+	<style type="text/css">
+		.display-none
+		{
+			display: none;
+		}
+		.display-block
+		{
+			display: block;
+		}
+		img
+		{
+			height: 200px;
+			width: auto;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<input type="range" id="bar" min="1" max="10" value="5" step="1" onchange="update(this.value)">
+	</div>
+	<img id="bored" class="display-none" src="https://images.theconversation.com/files/138670/original/image-20160921-21723-zvi9hu.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip">
+	<img id="happy" class="display-none" src="https://mistakesaregoodies.files.wordpress.com/2012/02/happy.jpg">
+	<img id="sad" class="display-none" src="https://media3.s-nbcnews.com/i/newscms/2019_42/1495563/sadness-inside-out-today-main-tease-191018_010305cfdd8f7dab2c6547daadfcfce6.jpg">
+	<script type="text/javascript">
+		var bored = document.getElementById('bored');
+			console.log(bored);
+		var happy = document.getElementById('happy');
+			console.log(happy);
+		var sad = document.getElementById('sad');
+			console.log(sad);
+		
+		var update = function(value)
+		{
+			console.log(value);
+			if (value < 3)
+			{
+				happy.className = "display-block";
+				bored.className = "display-none";
+				sad.className = "display-none";
+			}
+			else if (value >= 3 && value <= 7)
+			{
+				happy.className = "display-none";
+				bored.className = "display-block";
+				sad.className = "display-none";
+			}
+			else
+			{
+				happy.className = "display-none";
+				bored.className = "display-none";
+				sad.className = "display-block";
+			}
+		};
+
+		update(2);
+	</script>
+</body>
+</html>
