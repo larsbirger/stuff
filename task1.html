@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>litt hjernetrimm del 1</title>
+		<meta charset="utf-16">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style type="text/css">
+			body
+			{
+				font-size: 150%;
+				font-family: helvetica;
+				display: inline-flex;
+				padding-left: 50px;
+				background-color: #eee;
+			}
+			.container
+			{
+				width: 100%;
+				padding: 0px;
+				margin: 0px;
+			}
+			.row
+			{
+				display: table;
+			  	margin-right: 0px;
+			  	margin-left: 0px;
+			  	width: 100%;
+			}
+			.col-2
+			{
+				padding-left: 50px; 
+				float: left;
+				width: 20%;
+				min-width: 200px;
+			}
+
+			.col-4
+			{
+				padding-left: 50px; 
+				float: left;
+				width: 40%;
+				min-width: 400px;
+			}
+			.aside
+			{
+				float: right;
+				text-align: left;
+			}
+			.tiny-text
+			{
+				font-size: 60%;
+			}
+			.small-text
+			{
+				font-size: 80%;
+			}
+			.bordered
+			{
+				border-style: solid;
+				border-width: 2px;
+				border-color: black;
+			}
+			.boks
+			{
+				float: left;
+				width: 50px;
+				height: 50px;
+				margin: 50px;
+			}
+			.redColor
+			{
+				background-color: red;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="row">Hjernetrim</h1>
+			<nav class="col-2 small-text">
+			</nav>
+			<article class="col-4">
+				<h2 class="row">Del 1:</h2>
+				<section class="row">
+					<p>
+						I denne hjernetrimmen så har du fått tildelt 32 &lt;div> elementer
+						der 16 av de har classen "greenColor" og 16 har classen "redColor".
+						Som du ser så er alle elementene med classen "redColor" farget røde.
+						endre kildekoden i dette dokumentet slik at alle elementene med classen "greenColor" er farget grønnt.
+					</p>		
+				</section>
+				<section class="row">
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+					<div class="boks redColor"></div>
+					<div class="boks greenColor"></div>
+				</section>
+			</article>
+			<aside class="col-4 aside small-text">
+				<p>
+					Hvert element kan ha en eller flere class'er.<br><br>
+					For å selecte en class i CSS<br>
+					så skriver man navnet til classet med en punktum forran.<br><br>
+					F.eksempel:<br><br>
+					<code>&lt; div class="myClass" > &lt; /div ></code><br><br>
+					blir selectet med å skrive:<br><br>
+					<code>.myClass<br>{<br><br>}<br></code><br>
+					i &lt; style > taggen.
+				</p>
+			</aside>
+			<footer class="row">
+				<p class="tiny-text">Author: Lars Birger Bergmål</p>
+				<p class="tiny-text">Distributed under this license:</p>
+				
+				<a href="https://creativecommons.org/licenses/by-sa/4.0/">
+					<img width="auto" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/CC-BY-SA_icon.svg/1024px-CC-BY-SA_icon.svg.png">
+				</a>
+				
+			</footer>
+		</div>
+	</body>
+</html>
